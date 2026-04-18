@@ -115,14 +115,12 @@ dmesg | tail
 
 ## 🖥️ CLI Commands
 
-```
 engine supervisor <base-rootfs>
 engine start <id> <rootfs> <command>
 engine run <id> <rootfs> <command>
 engine ps
 engine logs <id>
 engine stop <id>
-```
 
 ## 🧠 Key Features
 
