@@ -1,5 +1,7 @@
 # Multi-Container Runtime 
 
+---
+
 ## 📌 Project Summary
 
 This project implements a lightweight Linux container runtime in C with:
@@ -70,6 +72,7 @@ make
 
 ### Load Kernel Module
 
+```
 sudo insmod monitor.ko
 ls -l /dev/container_monitor
 ```
@@ -113,14 +116,20 @@ sudo rmmod monitor
 dmesg | tail
 ```
 
+---
+
 ## 🖥️ CLI Commands
 
+```
 engine supervisor <base-rootfs>
 engine start <id> <rootfs> <command>
 engine run <id> <rootfs> <command>
 engine ps
 engine logs <id>
 engine stop <id>
+```
+
+---
 
 ## 🧠 Key Features
 
@@ -131,13 +140,15 @@ engine stop <id>
 * Kernel-level memory monitoring
 * Scheduling experiments
 
+---
+
 ## 🔬 Scheduling Experiments
 
 * CPU-bound vs I/O-bound workloads
 * Different nice values tested
 * Observed CPU sharing and response differences
 
-
+---
 
 ## 🧹 Cleanup
 
